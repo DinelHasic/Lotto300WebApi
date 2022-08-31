@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Loto300WebAPI.Contract\Loto300WebAPI.Contract.csproj" />
+    <ProjectReference Include="..\Loto300WebApi.Domain\Loto300WebApi.Domain.csproj" />
+    <ProjectReference Include="..\Loto300WebAPI.Services\Loto300WebAPI.Services.csproj" />
+    <ProjectReference Include="..\Loto300WebAPI.Storage\Loto300WebAPI.Storage.csproj" />
+  </ItemGroup>
+
+</Project>

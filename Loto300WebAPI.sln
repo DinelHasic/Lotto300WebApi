@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loto300WebAPI", "Loto300WebAPI\Loto300WebAPI.csproj", "{91EED354-72AC-439E-8EBB-9C92A244F890}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loto300WebApi.Domain", "Loto300WebApi.Domain\Loto300WebApi.Domain.csproj", "{2D76C4B0-19BD-47C1-A206-7610F0632359}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loto300WebAPI.Storage", "Loto300WebAPI.Storage\Loto300WebAPI.Storage.csproj", "{83ACC1ED-D797-466F-80AC-393F2C08F322}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loto300WebAPI.Services", "Loto300WebAPI.Services\Loto300WebAPI.Services.csproj", "{8628569E-FA06-4AD8-91FC-DDB4BD091ED9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loto300WebAPI.Contract", "Loto300WebAPI.Contract\Loto300WebAPI.Contract.csproj", "{F8E89355-58D6-4FCF-BDEA-186A0AED19A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{91EED354-72AC-439E-8EBB-9C92A244F890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91EED354-72AC-439E-8EBB-9C92A244F890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91EED354-72AC-439E-8EBB-9C92A244F890}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91EED354-72AC-439E-8EBB-9C92A244F890}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D76C4B0-19BD-47C1-A206-7610F0632359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D76C4B0-19BD-47C1-A206-7610F0632359}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D76C4B0-19BD-47C1-A206-7610F0632359}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D76C4B0-19BD-47C1-A206-7610F0632359}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83ACC1ED-D797-466F-80AC-393F2C08F322}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83ACC1ED-D797-466F-80AC-393F2C08F322}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83ACC1ED-D797-466F-80AC-393F2C08F322}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83ACC1ED-D797-466F-80AC-393F2C08F322}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8628569E-FA06-4AD8-91FC-DDB4BD091ED9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8628569E-FA06-4AD8-91FC-DDB4BD091ED9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8628569E-FA06-4AD8-91FC-DDB4BD091ED9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8628569E-FA06-4AD8-91FC-DDB4BD091ED9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F8E89355-58D6-4FCF-BDEA-186A0AED19A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F8E89355-58D6-4FCF-BDEA-186A0AED19A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F8E89355-58D6-4FCF-BDEA-186A0AED19A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F8E89355-58D6-4FCF-BDEA-186A0AED19A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0321199F-03CD-45AA-8477-22CD32A8F45A}
+	EndGlobalSection
+EndGlobal

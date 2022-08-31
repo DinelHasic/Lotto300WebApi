@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Loto300WebAPI.Contract\Loto300WebAPI.Contract.csproj" />
+    <ProjectReference Include="..\Loto300WebApi.Domain\Loto300WebApi.Domain.csproj" />
+    <ProjectReference Include="..\Loto300WebAPI.Storage\Loto300WebAPI.Storage.csproj" />
+  </ItemGroup>
+
+</Project>

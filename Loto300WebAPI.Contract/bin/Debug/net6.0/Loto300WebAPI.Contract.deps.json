@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Loto300WebAPI.Contract/1.0.0": {
+        "dependencies": {
+          "Loto300WebApi.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Loto300WebAPI.Contract.dll": {}
+        }
+      },
+      "Loto300WebApi.Domain/1.0.0": {
+        "runtime": {
+          "Loto300WebApi.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Loto300WebAPI.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Loto300WebApi.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

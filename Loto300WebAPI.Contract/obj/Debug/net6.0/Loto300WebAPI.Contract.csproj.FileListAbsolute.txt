@@ -1,0 +1,15 @@
+D:\C#\Loto300WebAPI\Loto300WebAPI.Contract\bin\Debug\net6.0\Loto300WebAPI.Contract.deps.json
+D:\C#\Loto300WebAPI\Loto300WebAPI.Contract\bin\Debug\net6.0\Loto300WebAPI.Contract.dll
+D:\C#\Loto300WebAPI\Loto300WebAPI.Contract\bin\Debug\net6.0\Loto300WebAPI.Contract.pdb
+D:\C#\Loto300WebAPI\Loto300WebAPI.Contract\bin\Debug\net6.0\Loto300WebApi.Domain.dll
+D:\C#\Loto300WebAPI\Loto300WebAPI.Contract\bin\Debug\net6.0\Loto300WebApi.Domain.pdb
+D:\C#\Loto300WebAPI\Loto300WebAPI.Contract\obj\Debug\net6.0\Loto300WebAPI.Contract.csproj.AssemblyReference.cache
+D:\C#\Loto300WebAPI\Loto300WebAPI.Contract\obj\Debug\net6.0\Loto300WebAPI.Contract.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\Loto300WebAPI\Loto300WebAPI.Contract\obj\Debug\net6.0\Loto300WebAPI.Contract.AssemblyInfoInputs.cache
+D:\C#\Loto300WebAPI\Loto300WebAPI.Contract\obj\Debug\net6.0\Loto300WebAPI.Contract.AssemblyInfo.cs
+D:\C#\Loto300WebAPI\Loto300WebAPI.Contract\obj\Debug\net6.0\Loto300WebAPI.Contract.csproj.CoreCompileInputs.cache
+D:\C#\Loto300WebAPI\Loto300WebAPI.Contract\obj\Debug\net6.0\Loto300WebAPI.Contract.csproj.CopyComplete
+D:\C#\Loto300WebAPI\Loto300WebAPI.Contract\obj\Debug\net6.0\Loto300WebAPI.Contract.dll
+D:\C#\Loto300WebAPI\Loto300WebAPI.Contract\obj\Debug\net6.0\refint\Loto300WebAPI.Contract.dll
+D:\C#\Loto300WebAPI\Loto300WebAPI.Contract\obj\Debug\net6.0\Loto300WebAPI.Contract.pdb
+D:\C#\Loto300WebAPI\Loto300WebAPI.Contract\obj\Debug\net6.0\ref\Loto300WebAPI.Contract.dll
