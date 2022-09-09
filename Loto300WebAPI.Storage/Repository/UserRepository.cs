@@ -5,6 +5,7 @@ using Loto3000App.Storage.Database;
 using Loto300WebApi.Domain.Entites;
 using Loto300WebAPI.Storage;
 using Loto300WebAPI.Storage.Repository;
+using Microsoft.EntityFrameworkCore;
 
 namespace Loto3000App.Storage.Repository
 {
@@ -35,13 +36,13 @@ namespace Loto3000App.Storage.Repository
            return GetAll().ToArray();
         }
 
-        public User FindUserByUserName(string userName)
+        public async Task<User> FindUserByUserNameAsync(string userName)
         {
-           return GetAll().SingleOrDefault(x => x.UserName == userName);
+           return  await GetAll().SingleOrDefaultAsync(x => x.UserName == userName);
         }
 
        
-        public async Task AddUser(User user)
+        public void AddUser(User user)
         {
           InsterEntity(user);
         }

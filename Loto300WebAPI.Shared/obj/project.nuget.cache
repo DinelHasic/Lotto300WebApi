@@ -1,0 +1,32 @@
+{
+  "version": 2,
+  "dgSpecHash": "3UoCrshlzvzojhpzGzuKHtT+JCke1M40shGgTnHHeGspN6UNNH+jTYnyFSyWNBzffvSP4oUGJrXigvSMR+cgAw==",
+  "success": true,
+  "projectFilePath": "D:\\C#\\Loto300WebAPI\\Loto300WebAPI.Shared\\Loto300WebAPI.Shared.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\User\\.nuget\\packages\\commonservicelocator\\1.3.0\\commonservicelocator.1.3.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\xact.core.pcl\\0.0.5014\\xact.core.pcl.0.0.5014.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'CommonServiceLocator 1.3.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "CommonServiceLocator",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'XAct.Core.PCL 0.0.5014' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "XAct.Core.PCL",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

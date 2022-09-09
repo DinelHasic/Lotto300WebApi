@@ -34,13 +34,12 @@ namespace Loto300WebAPI.Services.Mapper
             };
         }
 
-        public static UserCredentials ToUserCredentials(this User user)
+        public static LoginUserCredentialsDto ToUserCredentials(this User user)
         {
-            return new UserCredentials()
+            return new LoginUserCredentialsDto()
             {
                 UserName = user.UserName,
                 Password = user.Password,
-                UserType = user.UserType,
             };
         }
     }

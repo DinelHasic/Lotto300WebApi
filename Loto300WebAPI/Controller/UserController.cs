@@ -1,6 +1,8 @@
 ﻿using Loto3000App.Models;
 using Loto3000App.ServiceInterface;
 using Loto300WebAPI.Contract.DTOs;
+using Lotto300WebAPI.Shared;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -22,16 +24,7 @@ namespace Loto300WebAPI.Controller
         {
             IEnumerable<UserInfoDto> users = _userServices.GetAllUsers();
 
-            return users.ToArray();
-        }
-
-
-        [HttpGet("all/users/credentials")]
-        public ActionResult<IEnumerable<UserCredentials>> GetAllUsersCredinetals()
-        {
-            IEnumerable<UserCredentials> users = _userServices.GetUsersCredetntials();
-
-            return users.ToArray();
+            return Ok(users.ToArray());
         }
 
         [HttpGet("user/{id}")]
@@ -43,11 +36,27 @@ namespace Loto300WebAPI.Controller
         }
 
         [HttpPost("create/user")]
-        public  IActionResult CreateNewUser([FromBody] CreateNewUserDto newUser)
+        public  async Task<IActionResult> RegisterUserAsync([FromBody] RegisterUserDto newUser)
         {
-           _userServices.AddNewUser(newUser);
+            await  _userServices.AddNewUserAsync(newUser);
 
-            return Ok();
+            return Ok(newUser);
+        }
+
+        [HttpPost("login/user")]
+        public async Task<ActionResult<Token>> LogInUser([FromBody] LoginUserCredentialsDto user)
+        {
+            Token data = null;
+
+            try
+            {
+                data = await _userServices.GetUseByUserNameAndPasswordAsync(user);
+            }
+            catch (Exception ex)
+            {
+                return NotFound(ex.Message);
+            }
+            return Ok(data);
         }
     }
 }

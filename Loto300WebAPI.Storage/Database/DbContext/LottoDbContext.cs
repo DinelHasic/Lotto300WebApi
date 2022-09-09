@@ -1,6 +1,7 @@
 ﻿using Loto3000App.Models;
 using Loto300WebApi.Domain.Entites;
 using Loto300WebApi.Domain.Enum;
+using Loto300WebAPI.Storage.Helper;
 using Microsoft.EntityFrameworkCore;
 
 namespace Loto300WebAPI.Storage
@@ -24,10 +25,10 @@ namespace Loto300WebAPI.Storage
         {
             modelBuilder.Entity<User>().HasData(
 
-            new User(1, "Vanja", "test1", "test1", "test1", UserType.PLayer),
-            new User(2, "Dinko", "test2", "test2", "test2", UserType.PLayer),
-            new User(3, "Monika", "test3", "test3", "test3", UserType.PLayer),
-            new User(4, "Jhony", "Smith", "Jhony123", "Jhony123", UserType.Admin)
+            new User(1, "Vanja", "Broski", "VanjaBroski",HasingPassword.GetPassword("Test111"), UserType.PLayer),
+            new User(2, "Dinko", "Lord", "DinkoLord", HasingPassword.GetPassword("Test222"), UserType.PLayer),
+            new User(3, "Monika", "Beluci", "MonikaBeluci", HasingPassword.GetPassword("Test333"), UserType.PLayer),
+            new User(4, "Jhony", "Smith", "Jhony123", HasingPassword.GetPassword("Jhony123"), UserType.Admin)
 
             );
 

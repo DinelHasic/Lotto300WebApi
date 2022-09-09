@@ -15,3 +15,5 @@ D:\C#\Loto300WebAPI\Loto300WebAPI.Storage\obj\Debug\net6.0\Loto300WebAPI.Storage
 D:\C#\Loto300WebAPI\Loto300WebAPI.Storage\obj\Debug\net6.0\ref\Loto300WebAPI.Storage.dll
 D:\C#\Loto300WebAPI\Loto300WebAPI.Storage\bin\Debug\net6.0\Loto300WebAPI.Storage.runtimeconfig.json
 D:\C#\Loto300WebAPI\Loto300WebAPI.Storage\obj\Debug\net6.0\Loto300WebAPI.Storage.genruntimeconfig.cache
+D:\C#\Loto300WebAPI\Loto300WebAPI.Storage\bin\Debug\net6.0\Loto300WebAPI.Shared.dll
+D:\C#\Loto300WebAPI\Loto300WebAPI.Storage\bin\Debug\net6.0\Loto300WebAPI.Shared.pdb

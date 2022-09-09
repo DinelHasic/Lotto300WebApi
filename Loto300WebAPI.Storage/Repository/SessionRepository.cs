@@ -20,6 +20,11 @@ namespace Loto300WebAPI.Storage.Repository
             return GetAll().OrderBy(x => x.Id).Last().NumbersDrawn;
         }
 
+        public int GetLastSessionId()
+        {
+            return GetAll().OrderBy(x => x.Id).Last().Id;
+        }
+
         public int GenearteSessionId()
         {
             if (GetAll().Count() == 0)

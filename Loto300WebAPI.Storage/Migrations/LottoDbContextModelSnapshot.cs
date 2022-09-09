@@ -110,27 +110,27 @@ namespace Loto300WebAPI.Storage.Migrations
                         {
                             Id = 1,
                             FirstName = "Vanja",
-                            LastName = "test1",
-                            Password = "test1",
-                            UserName = "test1",
+                            LastName = "Broski",
+                            Password = "-nCqDR??	?7FG??",
+                            UserName = "VanjaBroski",
                             UserType = 1
                         },
                         new
                         {
                             Id = 2,
                             FirstName = "Dinko",
-                            LastName = "test2",
-                            Password = "test2",
-                            UserName = "test2",
+                            LastName = "Lord",
+                            Password = "M.????:?XU?",
+                            UserName = "DinkoLord",
                             UserType = 1
                         },
                         new
                         {
                             Id = 3,
                             FirstName = "Monika",
-                            LastName = "test3",
-                            Password = "test3",
-                            UserName = "test3",
+                            LastName = "Beluci",
+                            Password = "?`KW?(????\\^&??",
+                            UserName = "MonikaBeluci",
                             UserType = 1
                         },
                         new
@@ -138,7 +138,7 @@ namespace Loto300WebAPI.Storage.Migrations
                             Id = 4,
                             FirstName = "Jhony",
                             LastName = "Smith",
-                            Password = "Jhony123",
+                            Password = "??MO??%3??O,??<",
                             UserName = "Jhony123",
                             UserType = 0
                         });
@@ -172,30 +172,38 @@ namespace Loto300WebAPI.Storage.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
-                    b.Property<int>("NubersId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Numbers")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("UserPlayerId")
+                    b.Property<int?>("SessionId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserPlayerId");
+                    b.HasIndex("SessionId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("TicketNumber");
                 });
 
             modelBuilder.Entity("Loto300WebApi.Domain.Entites.TicketNumber", b =>
                 {
+                    b.HasOne("Loto300WebApi.Domain.Entites.Session", "Session")
+                        .WithMany()
+                        .HasForeignKey("SessionId");
+
                     b.HasOne("Loto3000App.Models.User", "UserPlayer")
                         .WithMany()
-                        .HasForeignKey("UserPlayerId")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Session");
 
                     b.Navigation("UserPlayer");
                 });

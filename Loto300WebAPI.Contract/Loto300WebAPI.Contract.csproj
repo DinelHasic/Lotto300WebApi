@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Loto300WebApi.Domain\Loto300WebApi.Domain.csproj" />
+    <ProjectReference Include="..\Loto300WebAPI.Shared\Loto300WebAPI.Shared.csproj" />
   </ItemGroup>
 
 </Project>

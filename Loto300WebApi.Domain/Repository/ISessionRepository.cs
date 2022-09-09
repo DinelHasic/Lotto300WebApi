@@ -8,6 +8,8 @@ namespace Loto300WebApi.Domain.Repository
 
         public int GenearteSessionId();
 
+        int GetLastSessionId();
+
         string GetLottoNumber();
     }
 }

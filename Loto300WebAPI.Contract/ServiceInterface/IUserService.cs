@@ -1,5 +1,6 @@
 ﻿using Loto3000App.Models;
 using Loto300WebAPI.Contract.DTOs;
+using Lotto300WebAPI.Shared;
 
 namespace Loto3000App.ServiceInterface
 {
@@ -9,10 +10,10 @@ namespace Loto3000App.ServiceInterface
 
         UserInfoDto GetUserById(int id);
 
-        UserInfoDto GetUseByUserName(string userName);
+        Task<UserInfoDto> GetUseByUserNameAsync(string userName);
 
-        IReadOnlyCollection<UserCredentials> GetUsersCredetntials(); 
+        Task AddNewUserAsync(RegisterUserDto newUser);
 
-        Task AddNewUser(CreateNewUserDto newUser);
+        Task<Token> GetUseByUserNameAndPasswordAsync(LoginUserCredentialsDto user);
     }
 }

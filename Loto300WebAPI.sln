@@ -5,13 +5,15 @@ VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loto300WebAPI", "Loto300WebAPI\Loto300WebAPI.csproj", "{91EED354-72AC-439E-8EBB-9C92A244F890}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loto300WebApi.Domain", "Loto300WebApi.Domain\Loto300WebApi.Domain.csproj", "{2D76C4B0-19BD-47C1-A206-7610F0632359}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loto300WebApi.Domain", "Loto300WebApi.Domain\Loto300WebApi.Domain.csproj", "{2D76C4B0-19BD-47C1-A206-7610F0632359}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loto300WebAPI.Storage", "Loto300WebAPI.Storage\Loto300WebAPI.Storage.csproj", "{83ACC1ED-D797-466F-80AC-393F2C08F322}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loto300WebAPI.Storage", "Loto300WebAPI.Storage\Loto300WebAPI.Storage.csproj", "{83ACC1ED-D797-466F-80AC-393F2C08F322}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loto300WebAPI.Services", "Loto300WebAPI.Services\Loto300WebAPI.Services.csproj", "{8628569E-FA06-4AD8-91FC-DDB4BD091ED9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loto300WebAPI.Services", "Loto300WebAPI.Services\Loto300WebAPI.Services.csproj", "{8628569E-FA06-4AD8-91FC-DDB4BD091ED9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loto300WebAPI.Contract", "Loto300WebAPI.Contract\Loto300WebAPI.Contract.csproj", "{F8E89355-58D6-4FCF-BDEA-186A0AED19A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Loto300WebAPI.Contract", "Loto300WebAPI.Contract\Loto300WebAPI.Contract.csproj", "{F8E89355-58D6-4FCF-BDEA-186A0AED19A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Loto300WebAPI.Shared", "Loto300WebAPI.Shared\Loto300WebAPI.Shared.csproj", "{B762D093-4D16-4DE1-839F-BAE673A43FCC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{F8E89355-58D6-4FCF-BDEA-186A0AED19A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8E89355-58D6-4FCF-BDEA-186A0AED19A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F8E89355-58D6-4FCF-BDEA-186A0AED19A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B762D093-4D16-4DE1-839F-BAE673A43FCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B762D093-4D16-4DE1-839F-BAE673A43FCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B762D093-4D16-4DE1-839F-BAE673A43FCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B762D093-4D16-4DE1-839F-BAE673A43FCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

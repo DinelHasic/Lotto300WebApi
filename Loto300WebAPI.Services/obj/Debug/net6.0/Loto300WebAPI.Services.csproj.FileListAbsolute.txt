@@ -17,3 +17,5 @@ D:\C#\Loto300WebAPI\Loto300WebAPI.Services\obj\Debug\net6.0\Loto300WebAPI.Servic
 D:\C#\Loto300WebAPI\Loto300WebAPI.Services\obj\Debug\net6.0\ref\Loto300WebAPI.Services.dll
 D:\C#\Loto300WebAPI\Loto300WebAPI.Services\bin\Debug\net6.0\Loto300WebAPI.Storage.dll
 D:\C#\Loto300WebAPI\Loto300WebAPI.Services\bin\Debug\net6.0\Loto300WebAPI.Storage.pdb
+D:\C#\Loto300WebAPI\Loto300WebAPI.Services\bin\Debug\net6.0\Loto300WebAPI.Shared.dll
+D:\C#\Loto300WebAPI\Loto300WebAPI.Services\bin\Debug\net6.0\Loto300WebAPI.Shared.pdb

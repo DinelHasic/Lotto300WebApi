@@ -1,0 +1,6 @@
+D:\C#\Loto300WebAPI\Lotto300WebAPI.Shared\bin\Debug\Lotto300WebAPI.Shared.dll
+D:\C#\Loto300WebAPI\Lotto300WebAPI.Shared\bin\Debug\Lotto300WebAPI.Shared.pdb
+D:\C#\Loto300WebAPI\Lotto300WebAPI.Shared\obj\Debug\Lotto300WebAPI.Shared.csproj.AssemblyReference.cache
+D:\C#\Loto300WebAPI\Lotto300WebAPI.Shared\obj\Debug\Lotto300WebAPI.Shared.csproj.CoreCompileInputs.cache
+D:\C#\Loto300WebAPI\Lotto300WebAPI.Shared\obj\Debug\Lotto300WebAPI.Shared.dll
+D:\C#\Loto300WebAPI\Lotto300WebAPI.Shared\obj\Debug\Lotto300WebAPI.Shared.pdb

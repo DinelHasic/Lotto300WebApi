@@ -2,21 +2,22 @@
 {
     public class UnitOfWork : IUnitOfWork
     {
-            private readonly ILottoDbContextcs _dbContext;
+        private readonly ILottoDbContextcs _dbContext;
 
-            public UnitOfWork(ILottoDbContextcs dbContext)
+        public UnitOfWork(ILottoDbContextcs dbContext)
+        {
+            _dbContext = dbContext;
+        }
+
+
+        public async Task<int> SaveChangesAsync()
+        {
+            if (_dbContext.ChangeTracker.HasChanges())
             {
-                _dbContext = dbContext;
+                return await _dbContext.SaveChangesAsync();
             }
 
-            public async Task<int> SaveChangesAsync()
-            {
-                if (_dbContext.ChangeTracker.HasChanges())
-                {
-                    return await _dbContext.SaveChangesAsync();
-                }
-
-                return 0;
-            }
+            return 0;
         }
     }
+}

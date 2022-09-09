@@ -1,3 +1,4 @@
+
 using Loto3000App.Models.Repository;
 using Loto3000App.Service;
 using Loto3000App.ServiceInterface;
@@ -9,6 +10,10 @@ using Loto300WebAPI.Services;
 using Loto300WebAPI.Storage;
 using Loto300WebAPI.Storage.Repository;
 using Loto300WebAPI.Storage.UnitOfWork;
+using Lotto300WebAPI.Shared;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -30,6 +35,34 @@ builder.Services.AddScoped<IUserRepository, UserRepository>()
                 .AddScoped<IUnitOfWork, UnitOfWork>()
                 .AddSwaggerGen().RegisterDatabase(contectionStringDatabase);
 
+
+
+var appConfig = builder.Configuration.GetSection("Auth");
+
+builder.Services.Configure<Auth>(appConfig);
+
+var auth = appConfig.Get<Auth>();
+var secret = Encoding.ASCII.GetBytes(auth.SecretKey);
+
+
+builder.Services.AddAuthentication(x =>
+{
+    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+}).AddJwtBearer(x =>
+{
+    x.RequireHttpsMetadata = false;
+    x.SaveToken = true;
+    x.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateAudience = false,
+        ValidateIssuer = false,
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(secret)
+    };
+});
+
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -44,6 +77,8 @@ app.UseCors(action => action.AllowAnyHeader().
                       AllowAnyOrigin());
 
 app.UseHttpsRedirection();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 

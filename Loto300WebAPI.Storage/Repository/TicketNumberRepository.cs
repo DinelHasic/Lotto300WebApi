@@ -1,5 +1,6 @@
 ﻿using Loto300WebApi.Domain.Entites;
 using Loto300WebApi.Domain.Repository;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,9 +21,15 @@ namespace Loto300WebAPI.Storage.Repository
             InsterEntity(ticketNumber);
         }
 
-        public IReadOnlyCollection<TicketNumber> GetTicketNumbers()
+        public IReadOnlyCollection<TicketNumber> GetTicketNumbers(int sessionId)
         {
-            return GetAll().ToArray();
+            return GetAll().Where(x => x.SessionId == sessionId).Include(x => x.UserPlayer).ToArray();
+        }
+
+
+        public IReadOnlyCollection<TicketNumber> GetTicketWhereSessionIdNull()
+        {
+            return GetAll().Where(x => x.SessionId == null).ToArray();
         }
 
         public int GenerateTicketId()

@@ -36,7 +36,6 @@ namespace Loto300WebAPI.Services
 
             TicketNumber ticketNumber = new TicketNumber();
 
-            ticketNumber.Id = _ticketNumberRepository.GenerateTicketId();
             ticketNumber.UserPlayer = user;
             ticketNumber.Numbers = numbers;
 
@@ -49,19 +48,35 @@ namespace Loto300WebAPI.Services
         {
             Session session = new Session();
 
-            session.Id = DatabaseLoto.GenearteTikeketsId();
             session.NumbersDrawn = drawnNumbers;
 
             _sessionReposiotry.SaveLottoNumbers(session);
 
             await _unitOfWork.SaveChangesAsync();
+
+            AssignTicketNumberSessionId();
+        }
+
+
+        public async void AssignTicketNumberSessionId()
+        {
+            List<TicketNumber> ticketNumbers = _ticketNumberRepository.GetTicketWhereSessionIdNull().ToList();
+
+            int sessionId = _sessionReposiotry.GetLastSessionId();
+
+            ticketNumbers.ForEach(ticketNumbers => ticketNumbers.SessionId = sessionId);
+
+             await _unitOfWork.SaveChangesAsync();
+
         }
 
         public List<WinnerUserDto> UsersWon()
         {
-            List<string> lottoNumbers = _sessionReposiotry.GetLottoNumber().Split().ToList();
+            List<string> lottoNumbers =  _sessionReposiotry.GetLottoNumber().Split().ToList();
 
-            List<TicketNumber> ticketNumbers = _ticketNumberRepository.GetTicketNumbers().ToList();
+            int sessionId = _sessionReposiotry.GetLastSessionId();
+
+            List<TicketNumber> ticketNumbers = _ticketNumberRepository.GetTicketNumbers(sessionId).ToList();
 
             List<WinnerUserDto> userDto = new List<WinnerUserDto>();
 

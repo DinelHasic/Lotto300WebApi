@@ -10,8 +10,8 @@ namespace Loto3000App.Models.Repository
 
         int GenerateId();
 
-        Task AddUser(User user);
+        void AddUser(User user);
 
-        User FindUserByUserName(string userName);
+        Task<User> FindUserByUserNameAsync(string userName);
     }
 }

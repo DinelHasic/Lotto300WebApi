@@ -13,7 +13,9 @@ namespace Loto300WebApi.Domain.Repository
 
         public int GenerateTicketId();
 
-        IReadOnlyCollection<TicketNumber> GetTicketNumbers();
+        IReadOnlyCollection<TicketNumber> GetTicketWhereSessionIdNull();
+
+        IReadOnlyCollection<TicketNumber> GetTicketNumbers(int sessionId);
     }
 }
 

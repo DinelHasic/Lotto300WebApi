@@ -13,3 +13,5 @@ D:\C#\Loto300WebAPI\Loto300WebAPI.Contract\obj\Debug\net6.0\Loto300WebAPI.Contra
 D:\C#\Loto300WebAPI\Loto300WebAPI.Contract\obj\Debug\net6.0\refint\Loto300WebAPI.Contract.dll
 D:\C#\Loto300WebAPI\Loto300WebAPI.Contract\obj\Debug\net6.0\Loto300WebAPI.Contract.pdb
 D:\C#\Loto300WebAPI\Loto300WebAPI.Contract\obj\Debug\net6.0\ref\Loto300WebAPI.Contract.dll
+D:\C#\Loto300WebAPI\Loto300WebAPI.Contract\bin\Debug\net6.0\Loto300WebAPI.Shared.dll
+D:\C#\Loto300WebAPI\Loto300WebAPI.Contract\bin\Debug\net6.0\Loto300WebAPI.Shared.pdb
