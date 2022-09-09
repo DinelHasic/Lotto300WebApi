@@ -1,0 +1,12 @@
+#username_invalid
+{
+  color: red;
+  display: none;
+  margin-top: 0%;
+}
+#password_invalid
+{
+    color: red;
+    display: none;
+    margin-top: 0%;
+}
